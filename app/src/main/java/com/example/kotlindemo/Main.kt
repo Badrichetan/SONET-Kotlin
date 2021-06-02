@@ -1,15 +1,19 @@
 package com.example.kotlindemo
 
 fun  main(){
-    var text:String = "Hello World"
-    var i:Int=0;
+    var a:Int = 23
+    var b:Int = 30
+    var x:Int = hello(a,b)
+    display(x)
 
-    for(l in text){
-        print("$l, ")
-        ++i;
-    }
-    println("number of letters: $i")
+}
 
+fun hello(a:Int, b:Int) : Int{
+    //var c:Int = a+b
+    //return c
+    return a+b
+}
 
-
+fun display(c:Int){
+    print("Result : $c")
 }
