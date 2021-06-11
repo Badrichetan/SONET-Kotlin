@@ -20,14 +20,14 @@ class MainActivity6 : AppCompatActivity() {
         var result = findViewById<TextView>(R.id.tv_6)
 
         btn.setOnClickListener(View.OnClickListener {
-            val person = Person()
-            person.name = name.text.toString()
-            person.gender = gender.text.toString()
-            person.age = age.text.toString().toInt()
+           // val person = Person()
+            //person.name = name.text.toString()
+            //person.gender = gender.text.toString()
+            //person.age = age.text.toString().toInt()
 
-            var result= if(person.age!=0)"${person.name}" else "Person is Minor"
+            //var result= if(person.age!=0)"${person.name}" else "Person is Minor"
 
-           Toast.makeText(this , result, Toast.LENGTH_LONG).show()
+           //Toast.makeText(this , result, Toast.LENGTH_LONG).show()
 
         })
     }

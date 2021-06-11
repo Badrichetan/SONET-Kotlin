@@ -1,16 +1,14 @@
 package com.example.kotlindemo
 
-class Person {
-    var name:String? = null
-    get() = field
+class Person constructor(name:String, zz:Double){
+
+    val name:String = name
+    var weightlbs:Double = zz
+
+    var weightKilo:Double
+    get() = weightlbs/2.0
     set(value){
-        field = value?.toUpperCase()
+        weightlbs = value+2.0
     }
-
-    var gender:String? = null
-
-    var age:Int = 0
-    set(value) = if(value<18) field=0 else field=value
-
 
 }
